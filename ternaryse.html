@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CODEHUB</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+				<h2 class="dummy-heading">codehub</h2>
+			</div>
+			<div class="bp-header__main">
+				<span class="bp-header__present">CODEHUB <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+				<h1 class="bp-header__title">Tips And Tricks</h1>
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+				</nav>
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Basic Programming</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">DataStructures</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Math</a></li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="inout.html">Input/Output</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="compana.html">Complexity Analysis</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="impl.html"Implimentation</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Operators</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bit Manipulation</a></li>
+					<!--<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>-->
+				</ul>
+				<!-- Submenu 1-1 -->
+				<!--<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fair Trade Roots</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Dried Veggies</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Our Brand</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Homemade</a></li>
+				</ul>-->
+				<!-- Submenu 2 -->
+				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="array.html">Arrays</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="stacks.html">Stacks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Queue</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Hashtable</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Searching</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-2" aria-owns="submenu-3-2" href="#">Sorting</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Greedy algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Graph</a></lid>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">String</a></li>
+					
+				</ul>
+				<!-- Submenu 3-1 -->
+				<ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="linearsearch.html"> Linear Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="binaryse.html">Binary Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="ternaryse.html">Ternary Search</a></li>
+				</ul>
+				<!-- Submenu 3-2 -->
+				<ul data-menu="submenu-3-2" id="submenu-3-2" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bubsort.html">Bubble Sort</a></li>
+					
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="merge.html">Merge Sort</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="quick.html">Quick Sort</a></li>
+					
+				</ul>
+				<!-- Submenu 4 -->
+				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Number-Theory</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Geometry</a></li>
+				</ul>
+				<!-- Submenu 4-1 -->
+				<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt1.html
+						">Basic Number-Theory 1</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt2.html">Basic Number-Theory 2</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="prim.html">Primarily Test</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="totient.html">Totient Function</a></li>
+
+				</ul>
+				<!-- Submenu 4-2 -->
+				<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="basc.html">Basics Of Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Inclusion-Exclusion</a></li>
+				</ul>
+				<!-- Submenu 4-3 -->	
+				<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="sweep.html">Line Sweep Techniques</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">line-intersection-using-bentley-ottmann-algorithm</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			<p class="info">
+				<h1>Ternary Search</h1>
+
+
+
+
+<p>Like linear search and binary search, ternary search is a searching technique that is used to determine the position of a specific value in an array. In binary search, the sorted array is divided into two parts while in ternary search, it is divided into 3 parts and then you determine in which part the element exists. </p>
+
+
+
+
+<p>Ternary search, like binary search, is a divide-and-conquer algorithm. It is mandatory for the array (in which you will search for an element) to be sorted before you begin the search.
+
+
+In this search, after each iteration it neglects ⅓ part of the array and repeats the same operations on the remaining ⅔.</p>
+
+
+<p><strong>Implementation</strong> </p>
+
+
+<pre class="prettyprint"><code>int ternary_search(int l,int r, int x)
+
+
+{
+
+
+if(r&gt;=l)
+
+
+{
+
+
+int mid1 = l + (r-l)/3;
+
+
+int mid2 = r - (r-l)/3;
+
+
+if(ar[mid1] == x)
+
+
+return mid1;
+
+
+if(ar[mid2] == x)
+
+
+return mid2;
+
+
+if(x&lt;ar[mid1])
+
+
+return ternary_search(l,mid1-1,x);
+
+
+else if(x&gt;ar[mid2])
+
+
+return ternary_search(mid2+1,r,x);
+
+
+else
+
+
+return ternary_search(mid1+1,mid2-1,x);
+
+
+
+
+
+
+}
+
+
+return -1;
+
+
+}
+
+
+</code></pre>
+
+
+<p>Let us consider the following example to understand the code.</p>
+
+
+<p>Let the sorted array be ar[ ]=\{ 2, 3, 5, 6, 8, 9, 12, 13, 14 \} with indices from 0 to 8. You are required to find the position of x=13 in this array. Divide the sorted array into the following 3 parts by evaluating the values of mid1 and mid2: </p>
+
+
+<ul>
+
+
+<li>\{2,3,5\} </li>
+
+
+<li>\{6, 8, 9\}</li>
+
+
+<li>\{12, 13, 14\} </li>
+
+
+</ul>
+
+
+<p>Here ar [ mid1 ]=5 and ar [ mid2 ]=12. As 13 is not equal to ar[ mid1 ] and ar[ mid2 ] and it is also not smaller than ar[ mid1 ], you can safely assume that it lies in the 3^{rd} part of the array as it is greater than ar [ mid2 ].</p>
+
+
+<p>Run the ternary search again with l=7 and r=8.</p>
+
+
+<p>Now, ar[ mid1 ]=ar[ 7 ]=13 and ar[ mid2 ]=ar [ 8 ]=14. </p>
+
+
+<p>As ar[ mid1 ]=x , mid1 is the required answer.</p>
+
+
+<p>If the value is not in the array, it returns -1 as the answer.</p>
+
+
+<p><strong>Complexity</strong><br />
+
+
+O( log_3N) , where N is the size of the array</p>
+
+
+<p><strong>Use of ternary search:</strong> </p>
+
+
+<p>This concept is used in <a href="https://en.wikipedia.org/wiki/Unimodality">unimodal</a> functions to determine the maximum or minimum value of that function. Unimodal functions are functions that, have a single highest value. </p>
+
+
+<p>Let us consider a function func in the interval [a,b], and you are required to determine the x for which func(x) is maximized. The function func is unimodal in nature, i.e. it strictly increases in the interval [a,x] and strictly decreases in the interval [x,b]. </p>
+
+
+<p>This can be done by various other methods like double differentiation or by using a modified binary search. In the case when the function cannot be differentiated easily, ternary search is useful. It is less prone to errors and easy to implement when:</p>
+
+
+<ul>
+
+
+<li>Dealing with floating point integers</li>
+
+
+<li>Required maximum value is reached at the end of the interval. </li>
+
+
+</ul>
+
+
+<p><strong>Implementation</strong></p>
+
+
+<pre class="prettyprint"><code>double func(double x)
+
+
+{
+
+
+return -1*1*x*x + 2*x +3;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+double ts(double start, double end)
+
+
+{
+
+
+double l = start, r = end;
+
+
+
+
+
+
+for(int i=0; i&lt;200; i++) {
+
+
+double l1 = (l*2+r)/3;
+
+
+double l2 = (l+2*r)/3;
+
+
+//cout&lt;&lt;l1&lt;&lt;" "&lt;&lt;l2&lt;&lt;endl;
+
+
+if(func(l1) &gt; func(l2)) r = l2; else l = l1;
+
+
+}
+
+
+
+
+
+
+double x = l;
+
+
+return func(x);
+
+
+}
+
+
+</code></pre>
+
+
+<p>The code is making 200 iterations because at each step the interval [a,b] is reduced to ⅔ of its previous size. After 200 iterations, the answer has an error of at most ⅔ ^{ 200} of the original interval, which is a good precision! You can modify this based on your requirements. </p>
+
+
+<p>Let's understand the code.</p>
+
+
+<p>You are first dividing the interval into the following 3 parts:</p>
+
+
+<ul>
+
+
+<li>(start \; to\; l_1 )</li>
+
+
+<li>(l_1+1 \;to \;l_2-1) </li>
+
+
+<li>(l_2, end) </li>
+
+
+</ul>
+
+
+<p>At each iteration you search for the part in which the maximum lies and ignore ⅓ part of the current interval.</p>
+
+
+<p>If fun(l_1) &gt; func(l_2), you can observe that the maximum value does not lie in the last interval. Therefore, ignore it by assigning r = l_2, otherwise the maximum value does not lie in the first part. </p>
+
+
+<p>Consider a unimodal function, -ax^2+ bx +3 where a = 1, b = 2\; and\; c = 3. The maximum value of func(x) between the interval start = 0 and end = 1 will be 4. </p>
+			</p>
+			<!-- Ajax loaded content here -->
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+			closeMenuCtrl.focus();
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+			openMenuCtrl.focus();
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+</body>
+
+</html>

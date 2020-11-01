@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CODEHUB</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+				<h2 class="dummy-heading">codehub</h2>
+			</div>
+			<div class="bp-header__main">
+				<span class="bp-header__present">CODEHUB <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+				<h1 class="bp-header__title">Tips And Tricks</h1>
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+				</nav>
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Basic Programming</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">DataStructures</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Math</a></li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="inout.html">Input/Output</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="compana.html">Complexity Analysis</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="impl.html"Implimentation</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Operators</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bit Manipulation</a></li>
+					<!--<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>-->
+				</ul>
+				<!-- Submenu 1-1 -->
+				<!--<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fair Trade Roots</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Dried Veggies</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Our Brand</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Homemade</a></li>
+				</ul>-->
+				<!-- Submenu 2 -->
+				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="array.html">Arrays</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="stacks.html">Stacks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Queue</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Hashtable</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Searching</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-2" aria-owns="submenu-3-2" href="#">Sorting</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Greedy algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Graph</a></lid>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">String</a></li>
+					
+				</ul>
+				<!-- Submenu 3-1 -->
+				<ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="linearsearch.html"> Linear Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="binaryse.html">Binary Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="ternaryse.html">Ternary Search</a></li>
+				</ul>
+				<!-- Submenu 3-2 -->
+				<ul data-menu="submenu-3-2" id="submenu-3-2" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bubsort.html">Bubble Sort</a></li>
+					
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="merge.html">Merge Sort</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="quick.html">Quick Sort</a></li>
+					
+				</ul>
+				<!-- Submenu 4 -->
+				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Number-Theory</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Geometry</a></li>
+				</ul>
+				<!-- Submenu 4-1 -->
+				<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt1.html">Basic Number-Theory 1</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt2.html">Basic Number-Theory 2</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="prim.html">Primarily Test</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="totient.html">Totient Function</a></li>
+
+				</ul>
+				<!-- Submenu 4-2 -->
+				<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="basc.html">Basics Of Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Inclusion-Exclusion</a></li>
+				</ul>
+				<!-- Submenu 4-3 -->	
+				<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="sweep.html">Line Sweep Techniques</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">line-intersection-using-bentley-ottmann-algorithm</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			<p class="info">
+				<h1>Primality Tests</h1>
+				<p>A natural number  N  is said to be a prime number if it can be divided only by  1  and itself. Primality Testing is done to check if a number is a prime or not. The topic explains different algorithms available for primality testing.</p>
+<p><strong>Basic Method:</strong></p>
+<p>This is an approach that goes in a way to convert definition of prime numbers to code. It checks if any of the number less than a given number( N ) divides the number or not. But on observing the factors of any number, this method can be limited to check only till  \sqrt N . This is because, product of any two numbers greater than  \sqrt N  can never be equal to  N . A C++ function for basic method is shown below.</p>
+<pre class="prettyprint"><code>int PrimeTest(int N)
+{
+    for (int i = 2; i*i &lt;= N; ++i)
+    {
+        if(N%i == 0)
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+</code></pre>
+<p>The function returns  1  if  N  is a prime number and  0  for a composite number. This function runs with a complexity of  O(\sqrt n) . That implies, this method can at most be used for numbers of range  10^{15}  to  10^{16}  to determine if it's a prime or not in reasonable amount of time.</p>
+<p>One major application of prime numbers are that they are used in cryptography. One of the standard cryptosystem - RSA algorithm uses a prime number as key which is usually over  1024  bits to ensure greater security. When dealing with such large numbers, definitely doesn't make the above mentioned method any good. Also, should be noticed that it is not easy to work with such large numbers especially when the operations performed are <code>/</code> and <code>%</code> at the time of primality testing. Thus most primality testing algorithms that are developed can only determine if the given number is a "probable prime" or composite. Couple of widely used of these algorithms are explained below.</p>
+<p><strong>Sieve of Eratosthenes:</strong> </p>
+<p>This is a simple algorithm useful in finding all the prime numbers up to a given number( N ). The algorithm takes all the numbers from  2  to  N  all initially unmarked. It starts from  2 . If the number is unmarked, mark all its multiples  \leq N  as composites. The performance can be improved by doing the above operation only till  \sqrt N  and all the numbers in range  [2,N]  that remained unmarked are primes. The reason that we can stop after doing the iterations only till  \sqrt N  is that, no composites  \leq N  would have a prime factor greater than  \sqrt N .</p>
+<p>A pseudocode for this algorithm is as below</p>
+<pre class="prettyprint"><code>A[N] = {0}
+
+for i from 2 to sqrt(N):
+    if A[i] = 0:
+        for j from 2 to N:
+            if i*j &gt; N:
+                break
+            A[i*j] = 1
+</code></pre>
+<p>In the final array, starting from 2, if for any index, value is 0, it is a prime, else is a composite.</p>
+<p><strong>Fermat Primality Testing:</strong> </p>
+<p>This testing is based on Fermat's Little Theorem. The theorem states that, given a prime number  P , and any number  a  (where  0 &lt; a &lt; p ), then  a^{p-1} \equiv 1 mod p .</p>
+<p>In Fermat Primality Testing,  k  random integers are selected as the value of  X  (where all  k  integers follow  0 &lt; X &lt; p ). If the statement of Fermat's Little Theorem is accepted for all these  k  values of  X  for a given number  N , then  N   is said as a probable prime. Pseudocode for Fermat primality testing is as below.</p>
+<pre class="prettyprint"><code>function: FermatPrimalityTesting(int N):
+    pick a random integer k     //not too less. not too high.
+    LOOP: repeat k times:
+        pick a random integer X in range (1,N-1)
+        if(X^(N-1)%N != 1):
+            return composite
+    return probably prime
+</code></pre>
+<p><strong>Miller-Rabin Primality Testing:</strong> </p>
+<p>Similar to Fermat primality test, Miller-Rabin primality test could only determine if a number is a probable prime.</p>
+<p>It is based on a basic principle where if  X^2 \equiv Y^2 mod N , but  X !\equiv \pm Y mod N , then  N  is composite.</p>
+<p>The algorithm in simple steps can be written as,  </p>
+<p>Given a number  N ( &gt; 2 ) for which primality is to be tested,<br />
+<strong>Step 1:</strong> Find  N-1 = 2^R . D <br />
+<strong>Step 2:</strong> Choose  A  in range  [2,N-2] <br />
+<strong>Step 3:</strong> Compute  X_0 = A^D mod N . If  X_0  is  \pm 1 ,  N  can be prime.<br />
+<strong>Step 4:</strong> Compute  X_i = X_i - 1 mod N . If  X_i = 1 ,  N  is composite.<br />
+If  X_i = -1 ,  N  is prime.<br />
+<strong>Step 5:</strong> Repeat <strong>Step 4</strong> for  R-1  times.<br />
+<strong>Step 6:</strong> If neither  -1  or  +1  appeared for  X_i ,  N  is composite.  </p>
+<p>Pseudocode for Miller-Rabin primality testing is given below.</p>
+<pre class="prettyprint"><code>function: MillerRabin_PrimalityTesting(int N):
+    if N%2 = 0:
+        return composite
+
+    write N-1 as (2^R . D) where D is odd number
+    pick a random integer k     //not too less. not too high.
+
+    LOOP: repeat k times:
+        pick a random integer A in range [2,N-2]
+        X = A^D % N
+        if X = 1 or X = N-1:
+            continue LOOP
+        for i from 1 to r-1:
+            X = X^2 % N
+            if X = 1:
+                return composite
+            if X = N-1:
+                continue LOOP
+        return composite
+    return probably prime
+</code></pre>
+<p>There are other methods too like AKS primality test, Lucas primality test which predicts if a number could be prime number or not. A method called Elliptic curve primality testing proves if a given number is prime, unlike predicting in the above mentioned methods.</p>
+
+			</p>
+			<!-- Ajax loaded content here -->
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+			closeMenuCtrl.focus();
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+			openMenuCtrl.focus();
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+</body>
+
+</html>

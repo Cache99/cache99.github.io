@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CODEHUB</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+				<h2 class="dummy-heading">codehub</h2>
+			</div>
+			<div class="bp-header__main">
+				<span class="bp-header__present">CODEHUB <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+				<h1 class="bp-header__title">Tips And Tricks</h1>
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+				</nav>
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Basic Programming</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">DataStructures</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Math</a></li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="inout.html">Input/Output</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="compana.html">Complexity Analysis</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="impl.html"Implimentation</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Operators</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bit Manipulation</a></li>
+					<!--<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>-->
+				</ul>
+				<!-- Submenu 1-1 -->
+				<!--<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fair Trade Roots</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Dried Veggies</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Our Brand</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Homemade</a></li>
+				</ul>-->
+				<!-- Submenu 2 -->
+				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="array.html">Arrays</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="stacks.html">Stacks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Queue</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Hashtable</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Searching</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-2" aria-owns="submenu-3-2" href="#">Sorting</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Greedy algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Graph</a></lid>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">String</a></li>
+					
+				</ul>
+				<!-- Submenu 3-1 -->
+				<ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="linearsearch.html"> Linear Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="binaryse.html">Binary Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="ternaryse.html">Ternary Search</a></li>
+				</ul>
+				<!-- Submenu 3-2 -->
+				<ul data-menu="submenu-3-2" id="submenu-3-2" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bubsort.html">Bubble Sort</a></li>
+					
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="merge.html">Merge Sort</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="quick.html">Quick Sort</a></li>
+					
+				</ul>
+				<!-- Submenu 4 -->
+				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Number-Theory</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Geometry</a></li>
+				</ul>
+				<!-- Submenu 4-1 -->
+				<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt1.html">Basic Number-Theory 1</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt2.html">Basic Number-Theory 2</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="prim.html">Primarily Test</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="totient.html">Totient Function</a></li>
+
+				</ul>
+				<!-- Submenu 4-2 -->
+				<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="basc.html">Basics Of Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Inclusion-Exclusion</a></li>
+				</ul>
+				<!-- Submenu 4-3 -->	
+				<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="sweep.html">Line Sweep Techniques</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">line-intersection-using-bentley-ottmann-algorithm</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			<p class="info">
+				<h1>Time and Space Complexity</h1>
+				<p>Sometimes, there are more than one way to solve a problem. We need to learn how to compare the performance different algorithms and choose the best one to solve a particular problem. While analyzing an algorithm, we mostly consider time complexity and space complexity. Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input. Similarly, Space complexity of an algorithm quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input.</p>
+<p>Time and space complexity depends on lots of things like hardware, operating system, processors, etc. However, we don't consider any of these factors while analyzing the algorithm. We will only consider the execution time of an algorithm.</p>
+<p>Lets start with a simple example. Suppose you are given an array A and an integer x and you have to find if x exists in array A.</p>
+<p>Simple solution to this problem is traverse the whole array A and check if the any element is equal to x.</p>
+<pre class="prettyprint"><code>for i : 1 to length of A
+    if A[i] is equal to x
+        return TRUE
+return FALSE
+</code></pre>
+<p>Each of the operation in computer take approximately constant time. Let each operation takes c time. The number of lines of code executed is actually depends on the value of x. During analyses of algorithm, mostly we will consider worst case scenario, i.e., when x is not present in the array A. In the worst case, the <strong>if</strong> condition will run N times where N is the length of the array A. So in the worst case, total execution time will be (N * c + c). N * c for the <strong>if</strong> condition and c for the <strong>return</strong> statement ( ignoring some operations like assignment of i ).</p>
+<p>As we can see that the total time depends on the length of the array A. If the length of the array will increase the time of execution will also increase. </p>
+<p><strong>Order of growth</strong> is how the time of execution depends on the length of the input. In the above example, we can clearly see that the time of execution is linearly depends on the length of the array. Order of growth will help us to compute the running time with ease. We will ignore the lower order terms, since the lower order terms are relatively insignificant for large input. We use different notation to describe limiting behavior of a function. </p>
+<p><strong>O-notation:</strong><br />
+To denote asymptotic upper bound, we use O-notation. For a given function g(n), we denote by O(g(n)) (pronounced “big-oh of g of n”) the set of functions:<br />
+O(g(n)) = { f(n) : there exist positive constants c and n_0 such that 0 \le f (n) \le c * g(n) for all n \ge n_0 }</p>
+<p><strong>\Omega-notation:</strong><br />
+To denote asymptotic lower bound, we use \Omega-notation. For a given function g(n), we denote by \Omega(g(n)) (pronounced “big-omega of g of n”) the set of functions:<br />
+\Omega(g(n)) = { f(n) : there exist positive constants c and n_0 such that 0 \le c * g(n) \le f(n) for all n \ge n_0 }</p>
+<p><strong>\Theta-notation:</strong><br />
+To denote asymptotic tight bound, we use \Theta-notation. For a given function g(n), we denote by \Theta(g(n)) (pronounced “big-theta of g of n”) the set of functions:<br />
+\Theta(g(n)) = { f (n) : there exist positive constants c_1,\;c_2 and n_0 such that 0 \le c_1 * g(n) \le f (n) \le c_2 * g(n) for all n \gt n_0 }</p>
+<p><img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/a1dddec.jpg" /></p>
+<p>Time complexity notations</p>
+<p>While analysing an algorithm, we mostly consider O-notation because it will give us an upper limit of the execution time i.e. the execution time in the worst case.</p>
+<p>To compute O-notation we will ignore the lower order terms, since the lower order terms are relatively insignificant for large input.<br />
+Let f(N) = 2 * N^2 + 3 * N + 5<br />
+O(f(N)) = O(2 * N^2 + 3 * N + 5) = O(N^2)</p>
+<p>Lets consider some example:</p>
+<p>1.</p>
+<pre class="prettyprint"><code>int count = 0;
+for (int i = 0; i &lt; N; i++) 
+    for (int j = 0; j &lt; i; j++) 
+        count++;
+</code></pre>
+<p>Lets see how many times <strong>count++</strong> will run.</p>
+<p>When i = 0, it will run 0 times.<br />
+When i = 1, it will run 1 times.<br />
+When i = 2, it will run 2 times and so on.</p>
+<p>Total number of times <strong>count++</strong> will run is 0 + 1 + 2 + ... + (N-1) = \frac{N * (N-1)}{2}. So the time complexity will be O(N^2).</p>
+<p>2.</p>
+<p></p><pre class="prettyprint"><code>int count = 0;
+for (int i = N; i &gt; 0; i /= 2) 
+    for (int j = 0; j &lt; i; j++) 
+        count++;
+</code></pre>
+This is a tricky case. In the first look, it seems like the complexity is O(N * logN). N for the j's loop and logN for i's loop.
+But its wrong. Lets see why.<p></p>
+<p>Think about how many times <strong>count++</strong> will run.</p>
+<p>When i = N, it will run N times.<br />
+When i = N / 2, it will run N / 2 times.<br />
+When i = N / 4, it will run N / 4 times and so on.</p>
+<p>Total number of times <strong>count++</strong> will run is N + N / 2 + N / 4 + ... + 1 = 2 * N. So the time complexity will be O(N).</p>
+<p>The table below is to help you understand the growth of several common time complexities, and thus help you judge if your algorithm is fast enough to get an Accepted ( assuming the algorithm is correct ).</p>
+<table class="pd-table">
+<thead>
+<tr class="align-top">
+<th class="medium-col heading left-row right-row"> Length of Input (N) </th>
+<th class="medium-col heading right-row"> Worst Accepted Algorithm </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="medium-col bold left-row right-row"> <= [10..11] </td>
+<td class="medium-col bold right-row"> O(N!), O(N^6) </td>
+</tr>
+<tr>
+<td class="medium-col bold left-row right-row">  <= [15..18] </td>
+<td class="medium-col bold right-row"> O(2^N * N^2) </td>
+</tr>
+<tr>
+<td class="medium-col bold left-row right-row"> <= [18..22] </td>
+<td class="medium-col bold right-row"> O(2^N * N) </td>
+</tr>
+<tr>
+<td class="medium-col bold left-row right-row"> <= 100 </td>
+<td class="medium-col bold right-row"> O(N^4) </td>
+</tr>
+<tr>
+<td class="medium-col bold left-row right-row"> <= 400 </td>
+<td class="medium-col bold right-row"> O(N^3) </td>
+</tr>
+<tr>
+<td class="medium-col bold left-row right-row"> <= 2K </td>
+<td class="medium-col bold right-row"> O(N^2 * logN) </td>
+</tr>
+<tr>
+<td class="medium-col bold left-row right-row"> <= 10K </td>
+<td class="medium-col bold right-row"> O(N^2) </td>
+</tr>
+<tr>
+<td class="medium-col bold left-row right-row"> <= 1M </td>
+<td class="medium-col bold right-row"> O(N * logN) </td>
+</tr>
+<tr>
+<td class="medium-col bold left-row right-row"> <= 100M </td>
+<td class="medium-col bold right-row"> O(N), O(logN), O(1) </td>
+</tr>
+</tbody>
+</table>
+
+			</p>
+			<!-- Ajax loaded content here -->
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+			closeMenuCtrl.focus();
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+			openMenuCtrl.focus();
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+</body>
+
+</html>

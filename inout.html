@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CODEHUB</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+				<h2 class="dummy-heading">codehub</h2>
+			</div>
+			<div class="bp-header__main">
+				<span class="bp-header__present">CODEHUB <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+				<h1 class="bp-header__title">Tips And Tricks</h1>
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+				</nav>
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Basic Programming</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">DataStructures</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Math</a></li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="inout.html">Input/Output</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="compana.html">Complexity Analysis</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="impl.html"Implimentation</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Operators</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bit Manipulation</a></li>
+					<!--<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>-->
+				</ul>
+				<!-- Submenu 1-1 -->
+				<!--<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fair Trade Roots</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Dried Veggies</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Our Brand</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Homemade</a></li>
+				</ul>-->
+				<!-- Submenu 2 -->
+				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="array.html">Arrays</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="stacks.html">Stacks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Queue</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Hashtable</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Searching</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-2" aria-owns="submenu-3-2" href="#">Sorting</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Greedy algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Graph</a></lid>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">String</a></li>
+					
+				</ul>
+				<!-- Submenu 3-1 -->
+				<ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="linearsearch.html"> Linear Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="binaryse.html">Binary Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="ternaryse.html">Ternary Search</a></li>
+				</ul>
+				<!-- Submenu 3-2 -->
+				<ul data-menu="submenu-3-2" id="submenu-3-2" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bubsort.html">Bubble Sort</a></li>
+					
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="merge.html">Merge Sort</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="quick.html">Quick Sort</a></li>
+					
+				</ul>
+				<!-- Submenu 4 -->
+				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Number-Theory</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Geometry</a></li>
+				</ul>
+				<!-- Submenu 4-1 -->
+				<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt1.html">Basic Number-Theory 1</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt2.html">Basic Number-Theory 2</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="prim.html">Primarily Test</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="totient.html">Totient Function</a></li>
+
+				</ul>
+				<!-- Submenu 4-2 -->
+				<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="basc.html">Basics Of Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Inclusion-Exclusion</a></li>
+				</ul>
+				<!-- Submenu 4-3 -->	
+				<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="sweep.html">Line Sweep Techniques</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">line-intersection-using-bentley-ottmann-algorithm</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			<p class="info">
+				<h1>Basics of Input/Output</h1>
+				<p>The very first step of getting started with online judge is to understand:</p>
+<ul>
+<li>How to read input data?</li>
+<li>How to output the answer?</li>
+</ul>
+<p>At HackerEarth, input data is read from <a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_input_.28stdin.29">standard input</a> stream (STDIN) and results are printed to <a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29">standard output</a> stream (STDOUT). Most of the questions will deal with either integers or strings. </p>
+<p>An example C code to read an integer from STDIN and printing it out to STDOUT is shown below.</p>
+<pre class="prettyprint"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int n;
+    scanf("%d",&amp;n); //read input integer from STDIN
+    printf("%d",n); //print output integer to STDOUT
+    return 0;
+}
+</code></pre>
+<p>Sample code snippet to read integer for all other languages are given in the code editor below.</p>
+<p>An example C code to read a string from STDIN and printing it out to STDOUT.</p>
+<pre class="prettyprint"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    char a[100]; //assuming that string size will not exceed 100
+    scanf("%s",a); //read a string in array a
+    printf("%s",a); //print out array a 
+    return 0;
+}
+</code></pre>
+<p>Careful not to print any thing else in the output, such as <code>printf("The answer is %d",n);</code> because the online judge directly compares your output to expected output like normal string comparison. Say if expected output is <code>5</code>, and the code prints <code>The answer is 5</code> then when online judge compares <code>5</code> with <code>The answer is 5</code>, it will say that the code produced wrong result. Every HackerEarth problem has a predefined input and output format. </p>
+<p>Every problem will also have <strong>Constraints</strong> section which helps in determining what size of array to be created or what datatypes to use, say <code>int</code> or <code>long long</code>.  </p>
+<p><strong>Runtime Errors</strong><br />
+ While solving the problems on an online Judge, many runtime errors can be faced, which are not clear by the message which comes with them. Lets try to understand these errors.</p>
+<p>To get clear about the definition of run time error:<br />
+A runtime error means that the program was compiled successfully, but it exited with a runtime error or crashed. You will receive an additional error message, which is most commonly one of the following:</p>
+<p>1) <strong>SIGSEGV</strong><br />
+This is the most common error, i.e., a "segmentation fault". This may be caused e.g. by an out-of-scope array index causing a buffer overflow, an incorrectly initialized pointer, etc. This signal is generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read. For example, you’re accessing a[-1] in a language which does not support negative indices for an array.</p>
+<p>2) <strong>SIGXFSZ</strong><br />
+"output limit exceeded". Your program has printed too much data to output.</p>
+<p>3) <strong>SIGFPE</strong><br />
+"floating point error". This usually occurs when you’re trying to divide a number by 0, or trying to take the square root of a negative number.</p>
+<p>4) <strong>SIGABRT</strong><br />
+These are raised by the program itself. This happens when the judge aborts your program in the middle of execution. Due to insufficient memory, this can be raised.</p>
+<p>5) <strong>NZEC</strong><br />
+(non-zero exit code) - this message means that the program exited returning a value different from 0 to the shell. For languages such as C/C++, this probably means you forgot to add "return 0" at the end of the program. It could happen if your program threw an exception which was not caught. Trying to allocate too much memory during code execution may also be one of the reasons.</p>
+<p>For interpreted languages like Python, <strong>NZEC</strong> will usually mean that your program either crashed or raised an uncaught exception. Some of the reasons being in such cases would be: the above mentioned runtime errors. Or, for instance usage of an external library which is causing some error, or not being used by the judge.</p>
+<p>6) <strong>MLE (Memory Limit Exceeded)</strong><br />
+This error means that your program tried to allocate memory beyond the memory limit indicated. This can occur if you declare a very large array, or if a data structure in your program becomes too large.</p>
+<p>7) <strong>OTHER</strong><br />
+This type of error is sometimes generated if you use too much memory. Check for arrays that are too large, or other elements that could grow to a size too large to fit in memory. It can also be sometimes be generated for similar reasons to the <strong>SIGSEGV</strong> error.</p>
+<p><strong>Some ways to avoid runtime errors:</strong> <br />
+1)  Make sure you aren't using variables that haven't been initialized. These may be set to 0 on your computer, but aren't guaranteed to be on the judge. <br />
+2) Check every single occurrence of accessing an array element and see if it could possibly be out of bounds. <br />
+3) Make sure you aren't declaring too much memory. 64 MB is guaranteed, but having an array of size [100000] * [100000] will never work.<br />
+4) Make sure you aren't declaring too much stack memory. Any large arrays should be declared globally, outside of any functions, as putting an array of 100000 ints inside a function probably won't work.</p>
+<p>The below exercise would be a great start. Welcome to the world of Competitive Programming.  </p>
+			</p>
+			<!-- Ajax loaded content here -->
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+			closeMenuCtrl.focus();
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+			openMenuCtrl.focus();
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+</body>
+
+</html>

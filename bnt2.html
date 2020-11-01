@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CODEHUB</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+				<h2 class="dummy-heading">codehub</h2>
+			</div>
+			<div class="bp-header__main">
+				<span class="bp-header__present">CODEHUB <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+				<h1 class="bp-header__title">Tips And Tricks</h1>
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+				</nav>
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Basic Programming</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">DataStructures</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Math</a></li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="inout.html">Input/Output</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="compana.html">Complexity Analysis</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="impl.html"Implimentation</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Operators</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bit Manipulation</a></li>
+					<!--<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>-->
+				</ul>
+				<!-- Submenu 1-1 -->
+				<!--<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fair Trade Roots</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Dried Veggies</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Our Brand</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Homemade</a></li>
+				</ul>-->
+				<!-- Submenu 2 -->
+				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="array.html">Arrays</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="stacks.html">Stacks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Queue</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Hashtable</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Searching</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-2" aria-owns="submenu-3-2" href="#">Sorting</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Greedy algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Graph</a></lid>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">String</a></li>
+					
+				</ul>
+				<!-- Submenu 3-1 -->
+				<ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="linearsearch.html"> Linear Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="binaryse.html">Binary Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="ternaryse.html">Ternary Search</a></li>
+				</ul>
+				<!-- Submenu 3-2 -->
+				<ul data-menu="submenu-3-2" id="submenu-3-2" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bubsort.html">Bubble Sort</a></li>
+					
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="merge.html">Merge Sort</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="quick.html">Quick Sort</a></li>
+					
+				</ul>
+				<!-- Submenu 4 -->
+				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Number-Theory</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Geometry</a></li>
+				</ul>
+				<!-- Submenu 4-1 -->
+				<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt1.html">Basic Number-Theory 1</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt2.html">Basic Number-Theory 2</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="prim.html">Primarily Test</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="totient.html">Totient Function</a></li>
+
+				</ul>
+				<!-- Submenu 4-2 -->
+				<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="basc.html">Basics Of Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Inclusion-Exclusion</a></li>
+				</ul>
+				<!-- Submenu 4-3 -->	
+				<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="sweep.html">Line Sweep Techniques</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">line-intersection-using-bentley-ottmann-algorithm</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			<p class="info">
+				<h1>Basic Number Theory-2</h1>
+				<p>The concept of prime numbers is a very important concept in math. This article discusses the concept of prime numbers and related properties.</p>
+<p><strong>What are prime numbers and composite numbers?</strong></p>
+<p>Prime numbers are those numbers that are greater than 1 and have only two factors 1 and itself. </p>
+<p>Composite numbers are also numbers that are greater than 1 but they have at least one more divisor other than 1 and itself.</p>
+<p>For example, 5 is a prime number because 5 is divisible only by 1 and 5 only. However, 6 is a composite number as 6 is divisible by 1, 2, 3, and 6.  </p>
+<p>There are various methods to check whether a number is prime.  </p>
+<p><strong>Naive approach</strong> </p>
+<p>Traverse all the numbers from  1  to  N  and count the number of divisors. If the number of divisors is equal to 2 then the given number is prime, else it is not.  </p>
+<pre class="prettyprint"><code>void checkprime(int N){
+        int count = 0;
+        for( int i = 1;i &lt;= N;++i )
+            if( N % i == 0 )
+                count++;
+        if(count == 2)
+            cout &lt;&lt; N &lt;&lt; “ is a prime number.” &lt;&lt; endl;
+        else
+            cout &lt;&lt; N &lt;&lt; “ is not a prime number.” &lt;&lt; endl;
+    }
+</code></pre>
+<p><em>Time complexity</em></p>
+<p>The time complexity of this function is <em>O(N)</em> because you traverse from  1  to  N .  </p>
+<p><strong><em>Better approach</em></strong> </p>
+<p>If you have two positive numbers  N  and  D , such that  N  is divisible by  D  and  D  is less than the square root of  N . </p>
+<ul>
+<li> (N / D)  must be greater than the square root of  N .</li>
+<li> N  is also divisible by  (N/D) . If there is a divisor of  N 
+   that is less than the square root of  N , then there will be a
+   divisor of  N  that is greater than square root of  N .  You will
+   have to traverse till the square root of  N .</li>
+</ul>
+<p><strong>Note</strong>: You are generating all the divisors of  N  and if the count of divisors is greater than 2, then the number is composite.  </p>
+<p>For example, if N=50,  \sqrt N =7 (floor value). You will iterate from 1 to 7 and count the number of divisors of N. The divisors of  N  are 1, 50; 2, 25; 5,10. You have 6 divisors of 50, and therefore, it is not prime.</p>
+<p></p><pre class="prettyprint"><code>void checkprime(int N) {
+        int count = 0;
+        for( int i = 1;i * i &lt;=N;++i ) {
+             if( N % i == 0) {
+                 if( i * i == N )
+                         count++;
+                 else       // i &lt; sqrt(N) and (N / i) &gt; sqrt(N)
+                         count += 2;
+              }
+        }
+        if(count == 2)
+            cout &lt;&lt; N &lt;&lt; “ is a prime number.” &lt;&lt; endl;
+        else
+            cout &lt;&lt; N &lt;&lt; “ is not a prime number.” &lt;&lt; endl;
+    }
+</code></pre>
+<em>Time complexity</em><p></p>
+<p>The time complexity of this function is  O(\sqrt N)   because you traverse from 1 to  \sqrt N .</p>
+<p><strong>Sieve of Eratosthenes</strong> </p>
+<p>You can use the <em>Sieve of Eratosthenes</em> to find all the prime numbers that are less than or equal to a given number N or to find out whether a number is a prime number.  </p>
+<p>The basic idea behind the Sieve of Eratosthenes is that at each iteration one prime number is picked up and all its multiples are eliminated. After the elimination process is complete, all the unmarked numbers that remain are prime.</p>
+<p><em>Pseudo code</em> </p>
+<ol>
+<li>Mark all the numbers as prime numbers except 1 </li>
+<li>Traverse over each prime numbers smaller than sqrt(N)</li>
+<li>For each prime number, mark its multiples as composite numbers</li>
+<li>Numbers, which are not the multiples of any number, will remain marked as prime number and others will change to composite numbers.  </li>
+</ol>
+<p></p><pre class="prettyprint"><code>void sieve(int N) {
+        bool isPrime[N+1];
+        for(int i = 0; i &lt;= N;++i) {
+            isPrime[i] = true;
+        }
+        isPrime[0] = false;
+        isPrime[1] = false;
+        for(int i = 2; i * i &lt;= N; ++i) {
+             if(isPrime[i] == true) {                    //Mark all the multiples of i as composite numbers
+                 for(int j = i * i; j &lt;= N ;j += i)
+                     isPrime[j] = false;
+            }
+        }
+    }
+
+</code></pre>
+This code will compute all the prime numbers that are smaller than or equal to N.<p></p>
+<p>Let us compute prime numbers where  N = 10 .</p>
+<ol>
+<li>Mark all the numbers as prime</li>
+<li>Mark 1 as composite</li>
+</ol>
+<p>In each iteration, check if  a number is prime or not, if it is then mark all of its multiple as composite.<br />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/41a5293.png" /></p>
+<p>The prime numbers are 2, 3, 5, and 7.  </p>
+<p><strong>Time complexity</strong><br />
+The inner loop that runs for each element is as follows:</p>
+<ol>
+<li>If i = 2, inner loop runs N / 2 times</li>
+<li>If i = 3, inner loop runs N / 3 times</li>
+<li>If i = 5, inner loop runs N / 5 times</li>
+</ol>
+<p><em>Total complexity</em></p>
+<p>N * (½ + ⅓ + ⅕ + … ) = O(NloglogN)</p>
+<p>Reference for complexity analysis: <a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">Sieve of Erastothenes</a></p>
+<p><strong>Modification of Sieve of Eratosthenes for fast factorization</strong> </p>
+<p><em>Factorization in  \sqrt N </em> </p>
+<p></p><pre class="prettyprint"><code>vector&lt;int&gt; factorize(int n) {
+    vector&lt;int&gt; res;
+    for (int i = 2; i * i &lt;= n; ++i) {
+        while (n % i == 0) {
+            res.push_back(i);
+            n /= i;
+        }
+    }
+    if (n != 1) {
+        res.push_back(n);
+    }
+    return res;
+}
+</code></pre>
+For example, <p></p>
+<p> n=50, i=2; res= {2}  <br />
+ n=25, i=3; res= {2}<br />
+ n=25, i=4; res= {2}<br />
+ n=25,i=5; res= {2,5,5}<br />
+ n=1 </p>
+<p>When you exit the for loop,  res \; vector      is the factorization of  N=50 .   </p>
+<p>At every step, you must look for the prime number of the least value, which divides the current  N . This is the main idea of this modification. </p>
+<p>Let us construct an array which will give us this number in <strong>O(1)</strong> time.  </p>
+<pre class="prettyprint"><code>int minPrime[n + 1];
+for (int i = 2; i * i &lt;= n; ++i) {
+    if (minPrime[i] == 0) {         //If i is prime
+        for (int j = i * i; j &lt;= n; j += i) {
+            if (minPrime[j] == 0) {
+                minPrime[j] = i;
+            }
+        }
+    }
+}
+for (int i = 2; i &lt;= n; ++i) {
+    if (minPrime[i] == 0) {
+        minPrime[i] = i;
+    }
+}
+</code></pre>
+<p>Now, use this modification to factorize  N  in <em>O(log(N))</em> time.  </p>
+<p></p><pre class="prettyprint"><code>vector&lt;int&gt; factorize(int n) {
+    vector&lt;int&gt; res;
+    while (n != 1) {
+        res.push_back(minPrime[n]);
+        n /= minPrime[n];
+    }
+    return res;
+}
+</code></pre>
+For example,<p></p>
+<p> n=50, minprime[50]=2,res={2} <br />
+ n=25,minprime[25]=5,res={2,5} <br />
+ n=5,minprime[5]=5,res={2,5,5} <br />
+ n=1 </p>
+<p>The required factors are in  res  .    </p>
+<p><strong>Conditions</strong></p>
+<p>You can implement this modification only if you are allowed to create an array of integers of size  N .  </p>
+<p><strong>Note</strong>: This approach is useful when you need to factorize not-very-large numbers. It is not necessary to build a modified Sieve for every problem  in which factorization is required. Moreover, you cannot build it for large numbers  N  like  10^9  or  10^{12} . Therefore, for such large numbers it is recommended that you factorize in <em>O(sqrt(N))</em> instead.  </p>
+<p><strong>Fact</strong></p>
+<p>If the factorization of  N  is  p_1^{q_1} * p_2^{q_2} * ... * p_k^{q_k}  where  p_1,p_2 ... p_k  are the prime factors of  N  and  q_1,q_2 ... q_k  are the powers of the respective prime factors, then  N  has  (q_1+ 1) * (q_2+ 1) * ... * (q_k + 1)  distinct divisors.</p>
+<p><strong>Sieve of Eratosthenes on the segment</strong>:  </p>
+<p>Sometimes you need to find all the primes that are in the range  [L...R]  and not in  [1...N] , where  R  is a large number.</p><p></p>
+<p><strong>Conditions</strong></p>
+<p>You are allowed to create an array of integers with size  (R - L + 1) .  </p>
+<p><strong>Implemention</strong></p>
+<pre class="prettyprint"><code>bool isPrime[r - l + 1]; //filled by true
+for (long long i = 2; i * i &lt;= r; ++i) {
+    for (long long j = max(i * i, (l + (i - 1)) / i  * i); j &lt;= r; j += i) {
+        isPrime[j - l] = false;
+    }
+}
+for (long long i = max(l, 2); i &lt;= r; ++i) {
+    if (isPrime[i - l]) {
+        //then i is prime
+    }
+}
+</code></pre>
+<p>The approximate comlexity is <em>O(sqrt(R))</em> </p>
+<p><strong>Suggestions</strong></p>
+<p>It is recommended that you do not build a Sieve to check several numbers for primality. Use the following function instead, which works in <em> O(\sqrt N) </em>  for every number:  </p>
+<pre class="prettyprint"><code>bool isPrime(int n) {
+    for (int i = 2; i * i &lt;= n; ++i) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+</code></pre>
+
+			</p>
+			<!-- Ajax loaded content here -->
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+			closeMenuCtrl.focus();
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+			openMenuCtrl.focus();
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+</body>
+
+</html>

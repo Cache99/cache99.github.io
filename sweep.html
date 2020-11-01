@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CODEHUB</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+				<h2 class="dummy-heading">codehub</h2>
+			</div>
+			<div class="bp-header__main">
+				<span class="bp-header__present">CODEHUB <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+				<h1 class="bp-header__title">Tips And Tricks</h1>
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+				</nav>
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Basic Programming</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">DataStructures</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Math</a></li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="inout.html">Input/Output</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="compana.html">Complexity Analysis</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="impl.html"Implimentation</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Operators</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bit Manipulation</a></li>
+					<!--<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>-->
+				</ul>
+				<!-- Submenu 1-1 -->
+				<!--<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fair Trade Roots</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Dried Veggies</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Our Brand</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Homemade</a></li>
+				</ul>-->
+				<!-- Submenu 2 -->
+				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="array.html">Arrays</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="stacks.html">Stacks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Queue</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Hashtable</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Searching</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-2" aria-owns="submenu-3-2" href="#">Sorting</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Greedy algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Graph</a></lid>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">String</a></li>
+					
+				</ul>
+				<!-- Submenu 3-1 -->
+				<ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="linearsearch.html"> Linear Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="binaryse.html">Binary Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="ternaryse.html">Ternary Search</a></li>
+				</ul>
+				<!-- Submenu 3-2 -->
+				<ul data-menu="submenu-3-2" id="submenu-3-2" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bubsort.html">Bubble Sort</a></li>
+					
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="merge.html">Merge Sort</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="quick.html">Quick Sort</a></li>
+					
+				</ul>
+				<!-- Submenu 4 -->
+				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Number-Theory</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Geometry</a></li>
+				</ul>
+				<!-- Submenu 4-1 -->
+				<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt1.html">Basic Number-Theory 1</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt2.html">Basic Number-Theory 2</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="prim.html">Primarily Test</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="totient.html">Totient Function</a></li>
+
+				</ul>
+				<!-- Submenu 4-2 -->
+				<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="basc.html">Basics Of Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Inclusion-Exclusion</a></li>
+				</ul>
+				<!-- Submenu 4-3 -->	
+				<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="sweep.html">Line Sweep Techniques</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">line-intersection-using-bentley-ottmann-algorithm</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			<p class="info">
+				<h1>Line Sweep Technique</h1>
+				<p>Pre-requisite: <a href="https://www.hackerearth.com/notes/computational-geometry-i-1/">Computational Geometry- I</a><br />
+In this article, we'll learn some algorithms based on the simple tools of computational geometry.<br />
+What is a <strong>sweep line</strong>?<br />
+A sweep line is an imaginary vertical line which is swept across the plane rightwards. That's why, the algorithms based on this concept are sometimes also called <strong>plane sweep algorithms</strong>. We sweep the line based on some events, in order to discretize the sweep. <br />The events are based on the problem we are considering , we'll see them in the algorithms discussed below. Other than events, we maintain a data structure which stores the events generally sorted by y coordinates (the criteria for ordering of data structure may vary sometimes) which is helpful in the processing when we encounter some event. At any instance, the data structure stores only the active events.<br />
+One other thing to note is that the efficiency of this technique depends on the data structures we use. Generally , we can use set in C++ but sometimes we require some extra information to be stored, so we go for balanced binary tree.<br />
+<br />
+Let's consider our first algorithm:<br /><br />
+<strong>Closest Pair</strong><br />
+Problem: Find the closest pair of points in the given array of  N  distinct points<br />
+This problem can be solved by comparing all pairs of points , but then its complexity is  O(N^2) <br />
+So, we need a better algorithm for this . Here, we'll discuss it using line sweep technique.<br /></p>
+<p>For this problem, we can consider the points in the array as our events.<br />
+And in a set, we store the already visited points sorted by y coordinate.<br />
+So, first we sort the points in x direction as we want our line to move towards right. <br />
+Now, suppose we have processed the points from 1 to N-1, and let h be the shortest distance we have got so far. For Nth point, we want to find points whose distance from Nth point is less than or equal to h.<br />
+Now, we know we can only go till h distance from  x_N  to find such point, and in the y direction we can go in h distance upwards and h distance downwards. So, all such points whose x coordinate lie in [ x_N-h,x_N ] and y coordinates lie in [ y_N-h , y_N+h ] are what we are concerned with and these form the active events of the set . All points in the set with x coordinates less than  x_N-h  are to be deleted .
+After this processing, we'll add the Nth point to the set.<br />
+One thing to note is that at any instance, the number of points which are active events is O(1)(there can be atmost 5 points around a point which are active excluding the point itself).<br />Okay, that's a lot of theory, let's see this algo running<br />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/ef52f9c.png" />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/0110069.png" /><br />
+<br />Initialize h as the distance between first two points    Update the value of h if present distance between points is less than h<br />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/55ca934.png" />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/5af7e3f.png" /><br />
+The red region in the image is the region containing points which are to be evaluated with the current point.The points left to this region are removed from the set.<br />
+Following is the C++ code for above algorithm:<br /></p>
+<pre class="prettyprint"><code>#define px second
+#define py first
+typedef pair&lt;long long, long long&gt; pairll;
+pairll pnts [MAX];
+int compare(pairll a, pairll b)
+{ 
+        return a.px&lt;b.px; 
+}
+double closest_pair(pairll pnts[],int n)
+{
+        sort(pnts,pnts+n,compare);
+        double best=INF;
+        set&lt;pairll&gt; box;
+        box.insert(pnts[0]);
+        int left = 0;
+        for (int i=1;i&lt;n;++i)
+        {
+            while (left&lt;i &amp;&amp; pnts[i].px-pnts[left].px &gt; best)
+                box.erase(pnts[left++]);
+            for(typeof(box.begin()) it=box.lower_bound(make_pair(pnts[i].py-best, pnts[i].px-best));it!=box.end() &amp;&amp; pnts[i].py+best&gt;=it-&gt;py;it++)
+                best = min(best, sqrt(pow(pnts[i].py - it-&gt;py, 2.0)+pow(pnts[i].px - it-&gt;px, 2.0)));
+            box.insert(pnts[i]);
+        }
+        return best;
+}
+</code></pre>
+<p>Let's break down the points in the code:<br />
+1. First ,we have sorted the array of points on x coordinates.<br />
+2. Then we inserted the first point in the pnts array to the set box. Note we have defined py as the first in the pair, so set will be sorted by y coordinates.<br />
+3. In the loop , for each point in pnts, we are removing the points to the left of the current point whose x coordinate has more distance than h(the current minimum distance) from  x_N .This loop runs for overall  O(N)  as we have only N elements in the set. The complexity of erase is  O(log N) . So, the overall complexity of this loop is  O(N * log N) <br />
+4. In the second for loop , we are iterating over all points whose x coordinates lie in [ x_N-h,x_N ] and y coordinates lie in [ y_N-h , y_N+h ]. Finding the lower_bound takes  O(log N)  and this loop runs for atmost 5 times.<br />
+5. For each point, insert into the set. This step takes  O(log N) .<br /> </p>
+<p>So, overall time complexity of the algorithm is  O(N* log N)  <br /> 
+Now, let's move on to our next problem.<br /><br /></p>
+<p><strong>Union Of Rectangles</strong>:<br />
+Problem: Given a set of  N  axis aligned rectangles(edges of rectangles parallel to x axis or y axis), find the area of union of all of the rectangles. A rectangle is represented by two points , one lower-left point and one upper-right point.<br />
+The events for this problem are the vertical edges.When we encounter a left edge, we do some action and when we encounter a right edge, we do some other action.Left edge is represented by lower-left point and right edge by upper-right point<br />
+<br />
+We start our algorithm by sorting the events by x coordinates. When a lower left point of a rectangle is hit (i.e., we encounter left edge of rectangle), we insert the rectangle into the set . When we hit an upper right point of a rectangle (we encounter right edge of rectangle), we remove the rectangle from the set. At any instance, the set contains only the rectangles which intersect the sweep line (rectangles whose left edges are visited but right edges are not).
+<br /><br />
+The area swept at any instance is =  \Delta y *  \Delta x where  \Delta y is the length of the sweep line which is actually cut by the rectangle(s) (sum of the vertical lengths of the orange region,  in the figure below) and  \Delta x is the distance between two events of this sweep line.<br />
+But here we just know which are the rectangles intersecting the sweep line. So, here we have a new problem: how to find the length of the sweep line cut by the rectangles? <br />
+The solution to this problem is pretty the same we have been doing by now. We use the line sweep technique to find this but this time we apply it 90 degrees rotated, i.e., we sweep a horizontal line from bottom to up . The events for this sweep line would be the horizontal edges of the active rectangles(rectangles cut by vertical sweep line). When we encounter a bottom horizontal edge of an active rectangle, we increment the counter (counter here maintains the number of rectangles that overlap at current time) and we decrement it on top horizontal edge of active rectangle. When the counter becomes zero from some non zero value, we have found cut length of the vertical sweep line, so we add the area to our final answer.<br />Let's see it running now:<br />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/c1b088b.png" />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/c6449e3.png" /><br /><br />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/4b512e8.png" />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/e0851e5.png" /><br /><br />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/38262ee.png" />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/3cef324.png" /><br /><br />
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/4368b58.png" /><br /><br />
+The images above show how we're doing the horizontal sweep bottom up.  \Delta y is the sum of the length of the two arrows shown in the last image. This we do, for all events of vertical sweep line.<br />
+This was our algorithm. So, let's come to implementation part. For every event of vertical sweep line , we need to find the length of the cut on the sweep line, that means we need to go for horizontal sweep line. Here, we may use boolean array as our data structure because we would have once sorted the rectangles in order of vertical  edges(vertical sweep) and once in order of horizontal edges(horizontal sweep), so we would have the sorting in both the directions.<br />
+Following is the C++ code for the algorithm:
+<br /></p>
+<p></p><pre class="prettyprint"><code>#define MAX 1000
+struct event 
+{
+    int ind; // Index of rectangle in rects
+    bool type; // Type of event: 0 = Lower-left ; 1 = Upper-right
+    event() {};
+    event(int ind, int type) : ind(ind), type(type) {};
+};
+struct point 
+{
+    int x, y;
+};
+point rects [MAX][12]; // Each rectangle consists of 2 points: [0] = lower-left ; [1] = upper-right
+bool compare_x(event a, event b) { return rects[a.ind][a.type].x&lt;rects[b.ind][b.type].x; }
+bool compare_y(event a, event b) { return rects[a.ind][a.type].y&lt;rects[b.ind][b.type].y; }
+int union_area(event events_v[],event events_h[],int n,int e)
+{
+       //n is the number of rectangles, e=2*n , e is the number of points (each rectangle has two points as described in declaration of rects)
+        bool in_set[MAX]={0};int area=0;
+        sort(events_v, events_v+e, compare_x);  //Pre-sort of vertical edges
+        sort(events_h, events_h+e, compare_y); // Pre-sort set of horizontal edges
+        in_set[events_v[0].ind] = 1;
+        for (int i=1;i&lt;e;++i) 
+        { // Vertical sweep line
+                event c = events_v[i];
+                int cnt = 0; // Counter to indicate how many rectangles are currently overlapping
+                // Delta_x: Distance between current sweep line and previous sweep line
+                int delta_x = rects[c.ind][c.type].x - rects[events_v[i-1].ind][events_v[i-1].type].x;
+                int begin_y;
+                if (delta_x==0){
+                        in_set[c.ind] = (c.type==0);
+                        continue;
+                }
+                for (int j=0;j&lt;e;++j)
+                        if (in_set[events_h[j].ind]==1)                 //Horizontal sweep line for active rectangle
+                        {
+                                if (events_h[j].type==0)                //If it is a bottom edge of rectangle
+                                {
+                                        if (cnt==0) begin_y = rects[events_h[j].ind][0].y; // Block starts
+                                        ++cnt;                          //incrementing number of overlapping rectangles
+                                }
+                                else                                    //If it is a top edge
+                                {
+                                        --cnt;                          //the rectangle is no more overlapping, so remove it
+                                        if (cnt==0)                     //Block ends
+                                        {
+                                                int delta_y = (rects[events_h[j].ind][13].y-begin_y);//length of the vertical sweep line cut by rectangles
+                                                area+=delta_x * delta_y;
+                                        }
+                                }
+                        }
+                in_set[c.ind] = (c.type==0);//If it is a left edge, the rectangle is in the active set else not
+        }
+    return area;
+}
+
+</code></pre>
+The complexity of the algorithm can be easily seen to be  O(N^2) . The complexity can be reduced by some other data structures such as BST instead of boolean array.<br />
+<br />
+By now, you would have understood somewhat how to use this technique, right?<br />
+Let's jump to one more problem that can be solved using this technique.<br />
+<br />
+<strong>Convex Hull</strong><br />
+Let S be a set of points. Then, convex hull is the smallest <a href="https://en.wikipedia.org/wiki/Convex_polygon">convex polygon</a> which covers all the points of S.<br />
+There exists an efficient algorithm for convex hull (Graham Scan) but here we discuss the same idea except for we sort on the basis of x coordinates instead of angle.<br /> 
+The pseudo code for the algorithm is:<br /><p></p>
+<p></p><pre class="prettyprint"><code>Sort the points of P by x-coordinate (in case of a tie, sort by y-coordinate).
+
+Initialize U and L as empty lists.
+The lists will hold the vertices of upper and lower hulls respectively.
+
+for i = 1, 2, ..., n:
+    while L contains at least two points and the sequence of last two points
+            of L and the point P[i] does not make a counter-clockwise turn:
+        remove the last point from L
+    append P[i] to L
+
+for i = n, n-1, ..., 1:
+    while U contains at least two points and the sequence of last two points
+            of U and the point P[i] does not make a counter-clockwise turn:
+        remove the last point from U
+    append P[i] to U
+
+Remove the last point of each list (it's the same as the first point of the other list).
+Concatenate L and U to obtain the convex hull of P.
+Points in the result will be listed in counter-clockwise order.
+</code></pre>
+<img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/55beaa3.png" />
+<br /><br />
+C++ implementation of the above algorithm is as follows:
+<br /><p></p>
+<p></p><pre class="prettyprint"><code>struct Point {
+        double x, y;
+};
+bool compare(Point a,Point b)
+{
+        return a.x&lt;b.x || (a.x==b.x &amp;&amp; a.y&lt;b.y);
+}
+//Returns positive value if B lies to the left of OA, negative if B lies to the right of OA, 0 if collinear
+double cross(const Point &amp;O, const Point &amp;A, const Point &amp;B)
+{
+        return (A.x - O.x) * (B.y - O.y) - (A.y - O.y) * (B.x - O.x);
+}
+//Returns a list of points on the convex hull
+vector&lt;Point&gt; convex_hull(vector&lt;Point&gt; P)
+{
+        int n = P.size(), k = 0;
+        vector&lt;Point&gt; H(2*n);
+        sort(P.begin(), P.end(),compare);
+        // Build lower hull
+        for (int i = 0; i &lt; n; ++i) {
+                while (k &gt;= 2 &amp;&amp; cross(H[k-2], H[k-1], P[i]) &lt;= 0) k--;
+                H[k++] = P[i];
+        }
+
+        // Build upper hull
+        //i starts from n-2 because n-1 is the point which both hulls will have in common
+        //t=k+1 so that the upper hull has atleast two points to begin with
+        for (int i = n-2, t = k+1; i &gt;= 0; i--) {
+                while (k &gt;= t &amp;&amp; cross(H[k-2], H[k-1], P[i]) &lt;= 0) k--;
+                H[k++] = P[i];
+        }
+        //the last point of upper hull is same with the fist point of the lower hull
+        H.resize(k-1);
+        return H;
+}
+
+</code></pre>
+<br />
+That was our convex hull using Andrew's algorithm, here we sorted using x coordinates for sweeping our line rightwards. This was using our line sweep technique. <br />
+Complexity of this algorithm is  O(N* log N)  because of sorting. It may seem to be  O(N^2)  because of while loop inside but this loop runs for overall  O(N)  as we are deleting points in this loop and we have only N points , so it gives  O(N) .
+<br /><br />
+Now you have got some taste of this technique, now try solving the attached problem. Do explore this technique's application in some other problems.<br /> <p></p>
+
+			</p>
+			<!-- Ajax loaded content here -->
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+			closeMenuCtrl.focus();
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+			openMenuCtrl.focus();
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+</body>
+
+</html>

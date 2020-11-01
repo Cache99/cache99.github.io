@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CODEHUB</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+				<h2 class="dummy-heading">codehub</h2>
+			</div>
+			<div class="bp-header__main">
+				<span class="bp-header__present">CODEHUB <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+				<h1 class="bp-header__title">Tips And Tricks</h1>
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/PageStackNavigation/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25521" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+				</nav>
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Basic Programming</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">DataStructures</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Math</a></li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="inout.html">Input/Output</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="compana.html">Complexity Analysis</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="impl.html"Implimentation</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Operators</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bit Manipulation</a></li>
+					<!--<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>-->
+				</ul>
+				<!-- Submenu 1-1 -->
+				<!--<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fair Trade Roots</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Dried Veggies</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Our Brand</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Homemade</a></li>
+				</ul>-->
+				<!-- Submenu 2 -->
+				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="array.html">Arrays</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="stacks.html">Stacks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Queue</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Hashtable</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Searching</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-2" aria-owns="submenu-3-2" href="#">Sorting</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Greedy algorithm</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Graph</a></lid>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">String</a></li>
+					
+				</ul>
+				<!-- Submenu 3-1 -->
+				<ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="linearsearch.html"> Linear Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="binaryse.html">Binary Search</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="ternaryse.html">Ternary Search</a></li>
+				</ul>
+				<!-- Submenu 3-2 -->
+				<ul data-menu="submenu-3-2" id="submenu-3-2" class="menu__level" tabindex="-1" role="menu" aria-label="Promo Packs">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bubsort.html">Bubble Sort</a></li>
+					
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="merge.html">Merge Sort</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="quick.html">Quick Sort</a></li>
+					
+				</ul>
+				<!-- Submenu 4 -->
+				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Mylk &amp; Drinks">
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Number-Theory</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Geometry</a></li>
+				</ul>
+				<!-- Submenu 4-1 -->
+				<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt1.html">Basic Number-Theory 1</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="bnt2.html">Basic Number-Theory 2</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="prim.html">Primarily Test</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="totient.html">Totient Function</a></li>
+
+				</ul>
+				<!-- Submenu 4-2 -->
+				<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="basc.html">Basics Of Combinatorics</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Inclusion-Exclusion</a></li>
+				</ul>
+				<!-- Submenu 4-3 -->	
+				<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Selection">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#"><a href="sweep.html">Line Sweep Techniques</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">line-intersection-using-bentley-ottmann-algorithm</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			<p class="info">
+				<h1>Stack</h1>
+
+
+
+<p>Stacks are dynamic data structures that follow the <strong>Last In First Out (LIFO)</strong> principle. The last item to be inserted into a stack is the first one to be deleted from it. </p>
+
+
+
+
+<p>For example, you have a stack of trays on a table. The tray at the top of the stack is the first item to be moved if you require a tray from that stack.</p>
+
+
+<p><strong>Inserting and deleting elements</strong></p>
+
+
+<p>Stacks have restrictions on the insertion and deletion of elements. Elements can be inserted or deleted only from one end of the stack i.e. from the top. The element at the top is called the top element. The operations of inserting and deleting elements are called push() and pop() respectively. </p>
+
+
+<p>When the top element of a stack is deleted, if the stack remains non-empty, then the element just below the previous top element becomes the new top element of the stack. </p>
+
+
+<p>For example, in the stack of trays, if you take the tray on the top and do not replace it, then the second tray automatically becomes the top element (tray) of that stack.</p>
+
+
+<p><strong>Features of stacks</strong></p>
+
+
+<ul>
+
+
+<li>Dynamic data structures</li>
+
+
+<li>Do not have a fixed size</li>
+
+
+<li>Do not consume a fixed amount of memory</li>
+
+
+<li>Size of stack changes with each push() and pop() operation. Each push() and pop() operation increases and decreases the size of the stack by 1, respectively.</li>
+
+
+</ul>
+
+
+<p>A stack can be visualized as follows:</p>
+
+
+<p><img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/9a74c87.png" /></p>
+
+
+<p><strong>Operations</strong></p>
+
+
+<p><strong>push( x )</strong>: Insert element x at the top of a stack</p>
+
+
+<pre class="prettyprint"><code>void push (int stack[ ] , int x , int n) {
+
+
+if ( top == n-1 ) { //If the top position is the last of position in a stack, this means that the stack is full
+
+
+cout &lt;&lt; “Stack is full.Overflow condition!” ;
+
+
+}
+
+
+else{
+
+
+top = top +1 ; //Incrementing top position
+
+
+stack[ top ] = x ; //Inserting element on incremented position
+
+
+}
+
+
+}
+
+
+</code></pre>
+
+
+<p><strong>pop( )</strong>: Removes an element from the top of a stack</p>
+
+
+<pre class="prettyprint"><code> void pop (int stack[ ] ,int n )
+
+
+{
+
+
+
+
+
+
+if( isEmpty ( ) )
+
+
+{
+
+
+cout &lt;&lt; “Stack is empty. Underflow condition! ” &lt;&lt; endl ;
+
+
+}
+
+
+else
+
+
+{
+
+
+top = top - 1 ; //Decrementing top’s position will detach last element from stack
+
+
+}
+
+
+}
+
+
+</code></pre>
+
+
+<p><strong>topElement ( )</strong>: Access the top element of a stack</p>
+
+
+<pre class="prettyprint"><code> int topElement ( )
+
+
+{
+
+
+return stack[ top ];
+
+
+}
+
+
+</code></pre>
+
+
+<p><strong>isEmpty ( ) :</strong> Check whether a stack is empty</p>
+
+
+<pre class="prettyprint"><code> bool isEmpty ( )
+
+
+{
+
+
+if ( top == -1 ) //Stack is empty
+
+
+return true ;
+
+
+else
+
+
+return false;
+
+
+}
+
+
+</code></pre>
+
+
+<p><strong>size ( )</strong>: Determines the current size of a stack</p>
+
+
+<pre class="prettyprint"><code> int size ( )
+
+
+{
+
+
+return top + 1;
+
+
+}
+
+
+</code></pre>
+
+
+<p><strong>Implementation</strong></p>
+
+
+<pre class="prettyprint"><code>#include &lt;iostream&gt;
+
+
+using namespace std;
+
+
+int top = -1; //Globally defining the value of top as the stack is empty
+
+
+
+
+
+
+void push (int stack[ ] , int x , int n)
+
+
+{
+
+
+if ( top == n-1 ) //If the top position is the last of position of the stack, this means that the stack is full.
+
+
+{
+
+
+cout &lt;&lt; "Stack is full.Overflow condition!" ;
+
+
+}
+
+
+else
+
+
+{
+
+
+top = top +1 ; //Incrementing the top position
+
+
+stack[ top ] = x ; //Inserting an element on incremented position
+
+
+}
+
+
+}
+
+
+bool isEmpty ( )
+
+
+{
+
+
+if ( top == -1 ) //Stack is empty
+
+
+return true ;
+
+
+else
+
+
+return false;
+
+
+}
+
+
+void pop ( )
+
+
+{
+
+
+
+
+
+
+if( isEmpty ( ) )
+
+
+{
+
+
+cout &lt;&lt; "Stack is empty. Underflow condition! " &lt;&lt; endl ;
+
+
+}
+
+
+else
+
+
+{
+
+
+top = top - 1 ; //Decrementing top’s position will detach last element from stack
+
+
+}
+
+
+}
+
+
+int size ( )
+
+
+{
+
+
+return top + 1;
+
+
+}
+
+
+int topElement (int stack[])
+
+
+{
+
+
+return stack[ top ];
+
+
+}
+
+
+//Let's implement these functions on the stack given above
+
+
+
+
+
+
+int main( )
+
+
+{
+
+
+int stack[ 3 ];
+
+
+// pushing element 5 in the stack .
+
+
+push(stack , 5 , 3 ) ;
+
+
+
+
+
+
+cout &lt;&lt; "Current size of stack is " &lt;&lt; size ( ) &lt;&lt; endl ;
+
+
+
+
+
+
+push(stack , 10 , 3);
+
+
+push (stack , 24 , 3) ;
+
+
+
+
+
+
+cout &lt;&lt; "Current size of stack is " &lt;&lt; size( ) &lt;&lt; endl ;
+
+
+
+
+
+
+//As the stack is full, further pushing will show an overflow condition.
+
+
+push(stack , 12 , 3) ;
+
+
+
+
+
+
+//Accessing the top element
+
+
+cout &lt;&lt; "The current top element in stack is " &lt;&lt; topElement(stack) &lt;&lt; endl;
+
+
+
+
+
+
+//Removing all the elements from the stack
+
+
+for(int i = 0 ; i &lt; 3;i++ )
+
+
+pop( );
+
+
+cout &lt;&lt; "Current size of stack is " &lt;&lt; size( ) &lt;&lt; endl ;
+
+
+
+
+
+
+//As the stack is empty , further popping will show an underflow condition.
+
+
+pop ( );
+
+
+
+
+
+
+}
+
+
+</code></pre>
+
+
+<p><strong>Output</strong> </p>
+
+
+<ul>
+
+
+<li>Current size of stack: 1</li>
+
+
+<li>Current size of stack: 3</li>
+
+
+<li>Current top element in stack: 24 (Stack is full. Overflow condition!)</li>
+
+
+<li>Current size of stack: 0 (Stack is empty. Underflow condition!)</li>
+
+
+</ul>
+
+
+<p>Refer to the following image for more information about the operations performed in the code.</p>
+
+
+<p><img alt="enter image description here" src="https://he-s3.s3.amazonaws.com/media/uploads/2f9b01a.png" /></p>
+
+
+<p><strong>Application</strong></p>
+
+
+<p>Consider the balanced parentheses problem.</p>
+
+
+<p>You have a bracket sequence made up of opening '(' and closing ')' parentheses. You must check if this bracket sequence is balanced.</p>
+
+
+<p>A bracket sequence is considered balanced if for every prefix of the sequence, the number of opening brackets is greater than or equal to the number of closing brackets, and the total number of opening brackets is equal to the number of closing brackets.</p>
+
+
+<p>You can check this using stack. Let's see how.</p>
+
+
+<p>You can maintain a stack where you store a parenthesis. Whenever, you come across an opening parenthesis, push it in the stack. However, whenever you come across a closing parenthesis, pop a parenthesis from the stack. </p>
+
+
+<pre class="prettyprint"><code> #include &lt;iostream&gt;
+
+
+using namespace std;
+
+
+int top;
+
+
+void check (char str[ ], int n, char stack [ ])
+
+
+{
+
+
+for(int i = 0 ; i &lt; n ; i++ )
+
+
+{
+
+
+if (str [ i ] == ‘(’)
+
+
+{
+
+
+top = top + 1;
+
+
+stack[ top ] = ‘ ( ’;
+
+
+}
+
+
+if(str[ i ] == ‘)’ )
+
+
+{
+
+
+if(top == -1 )
+
+
+{
+
+
+top = top -1 ;
+
+
+break ;
+
+
+}
+
+
+else
+
+
+{
+
+
+top = top -1 ;
+
+
+}
+
+
+}
+
+
+}
+
+
+if(top == -1)
+
+
+cout &lt;&lt; “String is balanced!” &lt;&lt; endl;
+
+
+else
+
+
+cout &lt;&lt; “String is unbalanced!” &lt;&lt; endl ;
+
+
+}
+
+
+
+
+
+
+int main ( )
+
+
+{
+
+
+//balanced parenthesis string.
+
+
+char str[ ] = { ‘(‘ , ‘a’ , ‘+’, ‘ ( ’, ‘b ’ , ‘-’ , ‘ c’ ,‘)’ , ‘ ) ’} ;
+
+
+
+
+
+
+// unbalanced string .
+
+
+char str1 [ ] = { ‘(’ , ‘(’ , ‘a’ , ‘ + ’ , ‘ b’ , ‘)’ } ;
+
+
+char stack [ 15 ] ;
+
+
+top = -1;
+
+
+check (str , 9 , stack ); //Passing balanced string
+
+
+top = -1 ;
+
+
+check(str1 , 5 , stack) ; //Passing unbalanced string
+
+
+return 0;
+
+}
+
+
+</code></pre>
+
+
+<p><strong>Output</strong> </p>
+
+
+<pre class="prettyprint"><code>String is balanced!
+
+
+String is unbalanced!
+
+
+</code></pre>
+
+			</p>
+			<!-- Ajax loaded content here -->
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+			closeMenuCtrl.focus();
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+			openMenuCtrl.focus();
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
+</body>
+
+</html>
